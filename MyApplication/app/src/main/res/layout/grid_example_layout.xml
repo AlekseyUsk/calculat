@@ -9,8 +9,6 @@
     tools:context=".MainActivity">
 
 
-
-
     <Button
         android:id="@+id/one"
         android:layout_width="@dimen/default_margin_button"
@@ -127,6 +125,7 @@
         android:backgroundTint="#cc0000"
         android:text="="
         android:textSize="@dimen/button_size" />
+
     <Button
         android:id="@+id/cha"
         android:layout_width="@dimen/default_margin_button"
