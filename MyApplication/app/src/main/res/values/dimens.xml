@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_image">72dp</dimen>
+    <dimen name="default_margin_button">70dp</dimen>
+    <dimen name="button_size">30dp</dimen>
+    <dimen name="dimen_title_size">35dp</dimen>
+    <dimen name="img_dimensio">75</dimen>
+    <dimen name="card_radius">50</dimen>
+</resources>
