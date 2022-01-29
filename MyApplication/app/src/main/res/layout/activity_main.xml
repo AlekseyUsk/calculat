@@ -4,10 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/ic_android_black_24dp"
+
     android:columnCount="4"
     android:orientation="horizontal"
-    tools:context=".MainActivity"
-    android:background="@drawable/ic_android_black_24dp">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="@dimen/textSize"
+        android:hint="Result"
+        />
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+       android:hint="EditNumber"
+        android:textSize="@dimen/textSize" />
 
 
     <Button
@@ -120,7 +140,7 @@
 
     <Button
         android:id="@+id/result"
-        android:layout_width="@dimen/default_button"
+        android:layout_width="80dp"
         android:layout_height="@dimen/default_button"
         android:layout_margin="10dp"
         android:backgroundTint="#cc0000"

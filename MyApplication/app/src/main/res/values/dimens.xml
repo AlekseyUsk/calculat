@@ -5,6 +5,7 @@
     <dimen name="default_button">70dp</dimen>
     <dimen name="button_size">30dp</dimen>
     <dimen name="dimen_title_size">35dp</dimen>
-    <dimen name="img_dimensio">75</dimen>
-    <dimen name="card_radius">50</dimen>
+    <dimen name="img_dimensio">75dp</dimen>
+    <dimen name="card_radius">50dp</dimen>
+    <dimen name="textSize">50sp</dimen>
 </resources>
