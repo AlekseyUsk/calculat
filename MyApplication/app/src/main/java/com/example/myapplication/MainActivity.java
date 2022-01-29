@@ -3,11 +3,14 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private CalculatorModel calculator;
+    EditText edit_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +33,32 @@ public class MainActivity extends AppCompatActivity {
         Button nine = findViewById(R.id.nine);
         Button sum = findViewById(R.id.sum);            //сложение
         Button zero = findViewById(R.id.zero);
-        Button result = findViewById(R.id.result);
+        Button result = findViewById(R.id.result);      // результат
         Button cha = findViewById(R.id.cha);            //дробные " , "
         Button min = findViewById(R.id.min);            //вычитание
         Button del = findViewById(R.id.del);            //стереть
+
+        int[] numberIds = new int[]{
+                R.id.zero,
+                R.id.one,
+                R.id.twoo,
+                R.id.three,
+                R.id.four,
+                R.id.five,
+                R.id.six,
+                R.id.seven,
+                R.id.eight,
+                R.id.nine
+        };
+        int[] actionsIds = new int[]{
+                R.id.sum,
+                R.id.min,
+                R.id.multiply,
+                R.id.division,
+                R.id.cha,
+                R.id.del
+        };
     }
 }
+// думал как то привязать массив кнопок с id numberIds к обекту,который будет вызываться
+//при нажатии пользователем на кнопку ,аналогично и для второго массива с действием
