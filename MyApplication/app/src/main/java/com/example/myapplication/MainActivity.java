@@ -33,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
         Button result = findViewById(R.id.result);
         Button cha = findViewById(R.id.cha);            //дробные " , "
         Button min = findViewById(R.id.min);            //вычитание
+        Button del = findViewById(R.id.del);            //стереть
     }
 }

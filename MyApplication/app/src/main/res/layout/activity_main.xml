@@ -136,17 +136,6 @@
         android:layout_margin="10dp"
         android:text="0"
         android:textSize="@dimen/button_size" />
-
-
-    <Button
-        android:id="@+id/result"
-        android:layout_width="80dp"
-        android:layout_height="@dimen/default_button"
-        android:layout_margin="10dp"
-        android:backgroundTint="#cc0000"
-        android:text="="
-        android:textSize="@dimen/button_size" />
-
     <Button
         android:id="@+id/cha"
         android:layout_width="@dimen/default_button"
@@ -155,8 +144,6 @@
         android:backgroundTint="#66cc66"
         android:text=","
         android:textSize="@dimen/button_size" />
-
-
     <Button
         android:id="@+id/min"
         android:layout_width="@dimen/default_button"
@@ -165,5 +152,30 @@
         android:backgroundTint="#66cc66"
         android:text="-"
         android:textSize="@dimen/button_size" />
+    <Button
+        android:id="@+id/del"
+        android:layout_width="@dimen/default_button"
+        android:layout_height="@dimen/default_button"
+        android:layout_margin="10dp"
+        android:backgroundTint="#66cc66"
+        android:text="C"
+        android:textSize="@dimen/button_size" />
+
+
+
+
+    <Button
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="4"
+        android:id="@+id/result"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/default_button"
+        android:layout_margin="10dp"
+        android:backgroundTint="#cc0000"
+        android:text="="
+        android:textSize="@dimen/button_size" />
+
+
+
 
 </GridLayout>
