@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView text_result = findViewById(R.id.text_result); // результат на экране
+        EditText edit_number = findViewById(R.id.edit_number); // ввод на экран
 
         Button one = findViewById(R.id.one);
         Button twoo = findViewById(R.id.twoo);
