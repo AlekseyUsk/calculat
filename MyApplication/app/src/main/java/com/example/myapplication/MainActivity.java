@@ -9,39 +9,41 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private CalculatorModel calculator;
-    EditText edit_number;
+
+    private CalculatorModel calculator;  // создал сылочную переменную на класс
+    //  EditText edit_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text_result = findViewById(R.id.text_result); // результат на экране
-        EditText edit_number = findViewById(R.id.edit_number); // ввод на экран
+        TextView textResult = findViewById(R.id.textResult); // результат на экране
+        EditText editNumber = findViewById(R.id.editNumber); // ввод на экран
 
+        Button zero = findViewById(R.id.zero);
         Button one = findViewById(R.id.one);
-        Button twoo = findViewById(R.id.twoo);
+        Button two = findViewById(R.id.two);
         Button three = findViewById(R.id.three);
-        Button division = findViewById(R.id.division);  //деление
         Button four = findViewById(R.id.four);
         Button five = findViewById(R.id.five);
         Button six = findViewById(R.id.six);
-        Button multiply = findViewById(R.id.multiply);  //умножение
         Button seven = findViewById(R.id.seven);
         Button eight = findViewById(R.id.eight);
         Button nine = findViewById(R.id.nine);
+
         Button sum = findViewById(R.id.sum);            //сложение
-        Button zero = findViewById(R.id.zero);
+        Button division = findViewById(R.id.division);  //деление
+        Button multiply = findViewById(R.id.multiply);  //умножение
         Button result = findViewById(R.id.result);      // результат
         Button cha = findViewById(R.id.cha);            //дробные " , "
         Button min = findViewById(R.id.min);            //вычитание
         Button del = findViewById(R.id.del);            //стереть
 
-        int[] numberIds = new int[]{
+        int[] ButtonIds = new int[]{
                 R.id.zero,
                 R.id.one,
-                R.id.twoo,
+                R.id.two,
                 R.id.three,
                 R.id.four,
                 R.id.five,
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.eight,
                 R.id.nine
         };
-        int[] actionsIds = new int[]{
+        int[] actionIds = new int[]{
                 R.id.sum,
                 R.id.min,
                 R.id.multiply,
@@ -58,7 +60,38 @@ public class MainActivity extends AppCompatActivity {
                 R.id.cha,
                 R.id.del
         };
+
+        /**
+         * ПЕРЕДАЧА СОБЫТИЙ ВНУТРЬ КАЛЬКУЛЯТОРА*/
+
+        calculator = new CalculatorModel(); // непонял зачем создал опять calculator? сверху есть же
+        // создаю обработчики событий для разных кнопок :
+        // numberButtonClicklistener - для кнопок с номерами
+        // actionButtonOnClickListener - для кнопок с арифметическими действиями
+
+        View.OnClickListener numberButtonClicklistener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calculator.onNumPressed(view.getId()); // при нажатии передаем id нажатой кнопки
+                // в calculator
+            }
+        };
+        View.OnClickListener actionButtonOnClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calculator.onActionPressed(view.getId());
+            }
+        };
+        // тут массиву кнопок циклом прогоняем и каждую кнопку я нахожу по id
+        // и устанавливаю на нее обработчик который будет вызыватся при нажатии
+        // будет вызываться эта функция calculator.onNumPressed(view.getId())
+        // куда попадет этот Id
+
+        for (int i = 0; i < ButtonIds.length; i++) {
+            findViewById(ButtonIds[i]).setOnClickListener(numberButtonClicklistener);
+        }
+        for (int i = 0; i < actionIds.length; i++) {
+            findViewById(actionIds[i]).setOnClickListener(actionButtonOnClickListener);
+        }
     }
 }
-// думал как то привязать массив кнопок с id numberIds к обекту,который будет вызываться
-//при нажатии пользователем на кнопку ,аналогично и для второго массива с действием
