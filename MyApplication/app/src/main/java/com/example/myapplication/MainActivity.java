@@ -11,15 +11,15 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private CalculatorModel calculator;  // создал сылочную переменную на класс
-    //  EditText edit_number;
+    //поле для ввода :
+    private TextView text;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textResult = findViewById(R.id.textResult); // результат на экране
-        EditText editNumber = findViewById(R.id.editNumber); // ввод на экран
 
         Button zero = findViewById(R.id.zero);
         Button one = findViewById(R.id.one);
@@ -58,8 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 R.id.multiply,
                 R.id.division,
                 R.id.cha,
-                R.id.del
+                R.id.del,
+                R.id.result,
         };
+
+        text = findViewById(R.id.text); // проинициализировал текстовое поле
+
 
         /**
          * ПЕРЕДАЧА СОБЫТИЙ ВНУТРЬ КАЛЬКУЛЯТОРА*/
@@ -74,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 calculator.onNumPressed(view.getId()); // при нажатии передаем id нажатой кнопки
                 // в calculator
+                text.setText(calculator.getText());  // отображение в текстовом поле
             }
         };
         View.OnClickListener actionButtonOnClickListener = new View.OnClickListener() {

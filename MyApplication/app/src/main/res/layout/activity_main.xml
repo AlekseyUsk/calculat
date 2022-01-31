@@ -11,22 +11,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/TextResult"
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
         android:hint="Result"
-        android:textSize="@dimen/textSize" />
-
-    <EditText
-        android:id="@+id/editNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:layout_gravity="fill_horizontal"
-        android:gravity="bottom"
-        android:hint="EditNumber"
         android:textSize="@dimen/textSize" />
 
 
