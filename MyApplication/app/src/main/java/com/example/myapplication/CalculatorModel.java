@@ -104,7 +104,7 @@ switch (actionId){
         actionSelected = R.id.result;
         break;
 }
-    } else if (inputStr.length() > 0 && state == State.firstArgInput) {
+    } else if (inputStr.length() > 0 && state == State.firstArgInput && actionId != R.id.result) {
             firstArg = Integer.parseInt(inputStr.toString());
             state = State.secondArgInput;
             inputStr.setLength(0);
