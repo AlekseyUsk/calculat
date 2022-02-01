@@ -25,7 +25,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="1"
+        android:text="@string/key_1"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="2"
+        android:text="@string/key_2"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -41,7 +41,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="3"
+        android:text="@string/key_3"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -58,7 +58,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="4"
+        android:text="@string/key_4"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -66,7 +66,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="5"
+        android:text="@string/key_5"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -74,7 +74,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="6"
+        android:text="@string/key_6"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -83,7 +83,7 @@
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
         android:backgroundTint="#66cc66"
-        android:text="*"
+        android:text="@string/key_mult"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -91,7 +91,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="7"
+        android:text="@string/key_7"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -99,7 +99,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="8"
+        android:text="@string/key_8"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -107,7 +107,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="9"
+        android:text="@string/key_9"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -116,7 +116,7 @@
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
         android:backgroundTint="#66cc66"
-        android:text="+"
+        android:text="@string/key_plus"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -124,7 +124,7 @@
         android:layout_width="@dimen/defaultButton"
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
-        android:text="0"
+        android:text="@string/key_0"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -133,7 +133,7 @@
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
         android:backgroundTint="#66cc66"
-        android:text=","
+        android:text="@string/key_cha"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -142,7 +142,7 @@
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
         android:backgroundTint="#66cc66"
-        android:text="-"
+        android:text="@string/key_min"
         android:textSize="@dimen/buttonSize" />
 
     <Button
@@ -151,7 +151,7 @@
         android:layout_height="@dimen/defaultButton"
         android:layout_margin="10dp"
         android:backgroundTint="#66cc66"
-        android:text="C"
+        android:text="@string/key_del"
         android:textSize="@dimen/buttonSize" />
 
 
@@ -163,7 +163,7 @@
         android:layout_gravity="fill_horizontal"
         android:layout_margin="10dp"
         android:backgroundTint="#cc0000"
-        android:text="="
+        android:text="@string/key_res"
         android:textSize="@dimen/buttonSize" />
 
 
