@@ -98,5 +98,6 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < actionIds.length; i++) {
             findViewById(actionIds[i]).setOnClickListener(actionButtonOnClickListener);
         }
+
     }
 }

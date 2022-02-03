@@ -20,8 +20,6 @@ public class CalculatorModel {
 
     public CalculatorModel() {    // создал конструктор инициализации полей
         state = State.firstArgInput;
-      //  state = State.secondArgInput;
-      //  state = State.resultShow;
     }
 
     public void onNumPressed(int buttonId) {   //реакция на нажатие кнопки с цифрой
@@ -116,5 +114,6 @@ switch (actionId){
     public String getText() {
         return inputStr.toString();   // получаем строку StringBuilder стрингбилдера и возвращаем ее
                                      // Для чего это ?
+
     }
 }

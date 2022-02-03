@@ -15,7 +15,7 @@
         <item name="backgroundTint">@color/purple_200</item>
     </style>
 
-    <style name="ButtonResult">
+    <style name="ButtonResult" parent="ButtonCalc">
         <item name="android:layout_width">@dimen/widthButtonResult</item>
         <item name="android:layout_height">@dimen/defaultButton</item>
         <item name="android:layout_gravity">fill_horizontal</item>

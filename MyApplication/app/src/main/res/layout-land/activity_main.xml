@@ -90,7 +90,7 @@
     <Button
         android:id="@+id/division"
         style="@style/ButtonCalcAction"
-        android:text="/" />
+        android:text="|" />
 
 
     <Button
