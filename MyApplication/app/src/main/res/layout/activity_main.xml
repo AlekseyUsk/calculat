@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/ic_android_black_24dp"
     android:layout_gravity="center"
-
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="100dp"
+    android:background="@drawable/gomer"
     android:columnCount="4"
     android:orientation="horizontal"
+    android:paddingStart="50dp"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:fontFamily="@font/animeace2_bld"
-        android:layout_marginBottom="20dp"
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/animeace2_bld"
         android:hint="Result"
         android:textSize="@dimen/textSize" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/one"
         style="@style/ButtonCalc"
         android:text="@string/key_1" />
@@ -107,7 +110,7 @@
     <Button
         android:id="@+id/result"
         style="@style/ButtonResult"
-        android:layout_columnSpan="4"
+        android:layout_columnSpan="3"
         android:text="@string/key_res"
         android:textSize="@dimen/buttonSize" />
 

@@ -2,6 +2,7 @@
 <resources>
 
     <style name="ButtonCalc">
+        <item name="cornerRadius">@dimen/cornerRadius</item>
         <item name="android:layout_width">@dimen/defaultButton</item>
         <item name="android:layout_height">@dimen/defaultButton</item>
         <item name="android:layout_margin">2dp</item>
