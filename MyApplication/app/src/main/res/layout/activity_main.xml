@@ -5,6 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/ic_android_black_24dp"
+    android:layout_gravity="center"
 
     android:columnCount="4"
     android:orientation="horizontal"
@@ -37,8 +38,7 @@
 
     <Button
         android:id="@+id/division"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="/" />
 
     <Button
@@ -58,8 +58,7 @@
 
     <Button
         android:id="@+id/multiply"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="@string/key_mult" />
 
     <Button
@@ -79,8 +78,7 @@
 
     <Button
         android:id="@+id/sum"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="@string/key_plus" />
 
     <Button
@@ -90,20 +88,17 @@
 
     <Button
         android:id="@+id/cha"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="@string/key_cha" />
 
     <Button
         android:id="@+id/min"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="@string/key_min" />
 
     <Button
         android:id="@+id/del"
-        style="@style/ButtonCalc"
-        android:backgroundTint="#66cc66"
+        style="@style/ButtonCalcAction"
         android:text="@string/key_del" />
 
 
