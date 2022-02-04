@@ -4,29 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="30dp"
-    android:layout_marginBottom="100dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="10dp"
     android:background="@drawable/gomer"
-    android:columnCount="4"
+    android:columnCount="8"
     android:orientation="horizontal"
-    android:paddingStart="50dp"
+    android:paddingRight="10dp"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
+        android:layout_height="match_parent"
+        android:layout_columnSpan="8"
         android:layout_gravity="fill_horizontal"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/animeace2_bld"
+        android:fontFamily="@font/animeace2_reg"
         android:hint="Result"
         android:textSize="@dimen/textSize" />
 
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/one"
         style="@style/ButtonCalc"
         android:text="@string/key_1" />
@@ -41,10 +38,6 @@
         style="@style/ButtonCalc"
         android:text="@string/key_3" />
 
-    <Button
-        android:id="@+id/division"
-        style="@style/ButtonCalcAction"
-        android:text="|" />
 
     <Button
         android:id="@+id/four"
@@ -61,10 +54,6 @@
         style="@style/ButtonCalc"
         android:text="@string/key_6" />
 
-    <Button
-        android:id="@+id/multiply"
-        style="@style/ButtonCalcAction"
-        android:text="@string/key_mult" />
 
     <Button
         android:id="@+id/seven"
@@ -82,24 +71,38 @@
         android:text="@string/key_9" />
 
     <Button
+        android:id="@+id/zero"
+        style="@style/ButtonCalc"
+        android:text="@string/key_0" />
+
+
+    <Button
         android:id="@+id/sum"
         style="@style/ButtonCalcAction"
         android:text="@string/key_plus" />
 
     <Button
-        android:id="@+id/zero"
-        style="@style/ButtonCalc"
-        android:text="@string/key_0" />
+        android:id="@+id/min"
+        style="@style/ButtonCalcAction"
+        android:text="@string/key_min" />
+
+
+    <Button
+        android:id="@+id/division"
+        style="@style/ButtonCalcAction"
+        android:text="|" />
+
+
+    <Button
+        android:id="@+id/multiply"
+        style="@style/ButtonCalcAction"
+        android:text="@string/key_mult" />
 
     <Button
         android:id="@+id/cha"
         style="@style/ButtonCalcAction"
         android:text="@string/key_cha" />
 
-    <Button
-        android:id="@+id/min"
-        style="@style/ButtonCalcAction"
-        android:text="@string/key_min" />
 
     <Button
         android:id="@+id/del"
@@ -109,9 +112,8 @@
 
     <Button
         android:id="@+id/result"
-        style="@style/ButtonResult"
-        android:layout_columnSpan="3"
-        android:text="@string/key_res"
+        style="@style/ButtonResultLand"
+        android:layout_columnSpan="8"
         android:textSize="@dimen/buttonSize" />
 
 
