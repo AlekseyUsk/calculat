@@ -11,7 +11,7 @@
     android:columnCount="4"
     android:orientation="horizontal"
     android:paddingStart="50dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <TextView

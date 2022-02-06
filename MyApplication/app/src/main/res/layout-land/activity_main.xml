@@ -10,7 +10,7 @@
     android:columnCount="8"
     android:orientation="horizontal"
     android:paddingRight="10dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/text"

@@ -1,4 +1,6 @@
-package com.example.myapplication;
+package com.example.myapplication.ui;
+
+import com.example.myapplication.R;
 
 public class CalculatorModel {
 
@@ -11,8 +13,8 @@ public class CalculatorModel {
 
     private State state;
 
-    private enum State {                        // что значит - enum ?
-                                                // почему не просто State ?
+    private enum State {        // ENUM ЭТО ТИП ПЕРЕЧИСЛЕНИЙ ( В ДАННОМ ТУТ ДЕЙСТВИЯ)
+
         firstArgInput,
         secondArgInput,
         resultShow
@@ -29,7 +31,7 @@ public class CalculatorModel {
         }
 
 
-if (inputStr.length() < 9){
+if (inputStr.length() < 10){
     switch (buttonId){
         case R.id.zero:
             if (inputStr.length() != 0) {
